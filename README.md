@@ -1,12 +1,8 @@
 <div align="center">
 
-<img src="arms-logo.jpg" alt="ARMS - Advanced Robotics & Manufacturing Systems" width="240"/>
+<img src="assets/banner.gif" alt="ARMS - Advanced Robotics & Manufacturing Systems at Arizona State University" width="100%"/>
 
-# ARMS @ ASU
-
-**Advanced Robotics & Manufacturing Systems**
-
-*Build. Compete. Teach. — Arizona State University, Polytechnic campus*
+<img src="assets/tagline.gif" alt="$ whoami -> arms-asu: robotics, manufacturing, and a bench for you." width="900"/>
 
 [![Instagram](https://img.shields.io/badge/Instagram-%40a.r.m.s.__robotics-F58025?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/a.r.m.s._robotics)
 [![Email](https://img.shields.io/badge/Email-the.arms.robotics%40gmail.com-101623?style=for-the-badge&logo=gmail&logoColor=white)](mailto:the.arms.robotics@gmail.com)
