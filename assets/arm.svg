@@ -9,59 +9,58 @@
   <rect width="1000" height="280" rx="14" fill="none" stroke="#1e2a3f" stroke-width="1"/>
 
   <!-- blueprint dressing -->
-  <circle cx="190" cy="190" r="122" fill="none" stroke="#233351" stroke-width="1" stroke-dasharray="4 7" opacity="0.55"/>
-  <line x1="60" y1="236" x2="940" y2="236" stroke="#233351" stroke-width="1" stroke-dasharray="8 8" opacity="0.6"/>
+  <circle cx="210" cy="218" r="120" fill="none" stroke="#233351" stroke-width="1" stroke-dasharray="4 7" opacity="0.55"/>
+  <line x1="60" y1="254" x2="940" y2="254" stroke="#233351" stroke-width="1" stroke-dasharray="8 8" opacity="0.6"/>
   <text x="44" y="54" font-family="Menlo, Consolas, monospace" font-size="15" letter-spacing="4" fill="#3f5a85">SCHEMATIC</text>
   <circle cx="44" cy="78" r="3" fill="#f58025" opacity="0.8"/>
   <line x1="54" y1="78" x2="150" y2="78" stroke="#3f5a85" stroke-width="1" opacity="0.6"/>
-  <ellipse cx="190" cy="244" rx="90" ry="8" fill="#f58025" opacity="0.05"/>
+  <ellipse cx="210" cy="256" rx="80" ry="7" fill="#f58025" opacity="0.05"/>
 
-  <!-- base -->
-  <path d="M138 236 L162 204 L218 204 L242 236 Z" fill="#16202f" stroke="#2a3952" stroke-width="1.5"/>
-  <rect x="174" y="182" width="32" height="26" rx="5" fill="#1c2739" stroke="#3f5a85" stroke-width="1.5"/>
-
-  <!-- arm: shoulder -> elbow -> wrist, nested rotations -->
-  <g transform="translate(190,190)">
-    <animateTransform attributeName="transform" type="rotate" values="-16;26;-16" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" additive="sum" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
-    <circle r="15" fill="#101827" stroke="#f58025" stroke-width="3"/>
-    <circle r="4" fill="#f58025"/>
-    <rect x="-13" y="-118" width="26" height="118" rx="11" fill="#22304a" stroke="#3f5a85" stroke-width="1.5"/>
-    <line x1="-5" y1="-100" x2="-5" y2="-30" stroke="#3f5a85" stroke-width="1.5" opacity="0.7"/>
-    <line x1="5" y1="-100" x2="5" y2="-30" stroke="#3f5a85" stroke-width="1.5" opacity="0.7"/>
-    <g transform="translate(0,-110)">
-      <animateTransform attributeName="transform" type="rotate" values="34;-30;34" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" additive="sum" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
-      <circle r="11" fill="#101827" stroke="#f58025" stroke-width="3"/>
-      <circle r="3" fill="#f58025"/>
-      <rect x="-10" y="-102" width="20" height="102" rx="9" fill="#22304a" stroke="#3f5a85" stroke-width="1.5"/>
-      <line x1="0" y1="-88" x2="0" y2="-24" stroke="#3f5a85" stroke-width="1.5" opacity="0.7"/>
-      <g transform="translate(0,-98)">
-        <animateTransform attributeName="transform" type="rotate" values="-38;30;-38" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" additive="sum" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
-        <circle r="8" fill="#101827" stroke="#f58025" stroke-width="2.5"/>
-        <g transform="translate(0,-8)">
-          <g>
-            <animateTransform attributeName="transform" type="rotate" values="-4;-20;-4" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
-            <rect x="-11" y="-24" width="6" height="24" rx="3" fill="#f58025"/>
+  <!-- base + arm, scaled to fit -->
+  <g transform="translate(210,218) scale(0.72)">
+    <path d="M-52 50 L-28 18 L28 18 L52 50 Z" fill="#16202f" stroke="#2a3952" stroke-width="1.5"/>
+    <rect x="-16" y="-4" width="32" height="26" rx="5" fill="#1c2739" stroke="#3f5a85" stroke-width="1.5"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-16;26;-16" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+      <circle r="15" fill="#101827" stroke="#f58025" stroke-width="3"/>
+      <circle r="4" fill="#f58025"/>
+      <rect x="-13" y="-118" width="26" height="118" rx="11" fill="#22304a" stroke="#3f5a85" stroke-width="1.5"/>
+      <line x1="-5" y1="-100" x2="-5" y2="-30" stroke="#3f5a85" stroke-width="1.5" opacity="0.7"/>
+      <line x1="5" y1="-100" x2="5" y2="-30" stroke="#3f5a85" stroke-width="1.5" opacity="0.7"/>
+      <g transform="translate(0,-110)">
+        <animateTransform attributeName="transform" type="rotate" values="34;-30;34" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" additive="sum" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+        <circle r="11" fill="#101827" stroke="#f58025" stroke-width="3"/>
+        <circle r="3" fill="#f58025"/>
+        <rect x="-10" y="-102" width="20" height="102" rx="9" fill="#22304a" stroke="#3f5a85" stroke-width="1.5"/>
+        <line x1="0" y1="-88" x2="0" y2="-24" stroke="#3f5a85" stroke-width="1.5" opacity="0.7"/>
+        <g transform="translate(0,-98)">
+          <animateTransform attributeName="transform" type="rotate" values="-38;30;-38" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" additive="sum" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+          <circle r="8" fill="#101827" stroke="#f58025" stroke-width="2.5"/>
+          <g transform="translate(0,-8)">
+            <g>
+              <animateTransform attributeName="transform" type="rotate" values="-4;-20;-4" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+              <rect x="-11" y="-24" width="6" height="24" rx="3" fill="#f58025"/>
+            </g>
+            <g>
+              <animateTransform attributeName="transform" type="rotate" values="4;20;4" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+              <rect x="5" y="-24" width="6" height="24" rx="3" fill="#f58025"/>
+            </g>
           </g>
-          <g>
-            <animateTransform attributeName="transform" type="rotate" values="4;20;4" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
-            <rect x="5" y="-24" width="6" height="24" rx="3" fill="#f58025"/>
+          <g transform="translate(0,-34)">
+            <circle r="5" fill="#ffb35c" opacity="0">
+              <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.465;0.5;0.535;1" dur="6s" repeatCount="indefinite"/>
+            </circle>
+            <circle r="10" fill="#f58025" opacity="0">
+              <animate attributeName="opacity" values="0;0;0.35;0;0" keyTimes="0;0.465;0.5;0.535;1" dur="6s" repeatCount="indefinite"/>
+            </circle>
           </g>
-        </g>
-        <!-- welding spark at tool tip -->
-        <g transform="translate(0,-34)">
-          <circle r="5" fill="#ffb35c" opacity="0">
-            <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.465;0.5;0.535;1" dur="6s" repeatCount="indefinite"/>
-          </circle>
-          <circle r="10" fill="#f58025" opacity="0">
-            <animate attributeName="opacity" values="0;0;0.35;0;0" keyTimes="0;0.465;0.5;0.535;1" dur="6s" repeatCount="indefinite"/>
-          </circle>
         </g>
       </g>
     </g>
   </g>
 
   <!-- right-side copy -->
-  <text x="560" y="120" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#f5f7fa">We build real machines.</text>
-  <text x="560" y="162" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8b93a7">CAD it. Cut it. Wire it. Code it. Drive it.</text>
-  <text x="560" y="196" font-family="Menlo, Consolas, monospace" font-size="15" letter-spacing="3" fill="#f58025">ROBOTICS + MANUFACTURING</text>
+  <text x="540" y="120" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#f5f7fa">We build real machines.</text>
+  <text x="540" y="162" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#8b93a7">CAD it. Cut it. Wire it. Code it. Drive it.</text>
+  <text x="540" y="196" font-family="Menlo, Consolas, monospace" font-size="15" letter-spacing="3" fill="#f58025">ROBOTICS + MANUFACTURING</text>
 </svg>
