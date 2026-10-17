@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="28" viewBox="0 0 1000 28" role="img" aria-label="Section divider">
+  <rect width="1000" height="28" rx="14" fill="#0d1220"/>
+  <rect width="1000" height="28" rx="14" fill="none" stroke="#1e2a3f" stroke-width="1"/>
+  <line x1="30" y1="14" x2="970" y2="14" stroke="#233351" stroke-width="2"/>
+  <circle r="8" cy="14" cx="-10" fill="#f58025" opacity="0.25">
+    <animate attributeName="cx" values="-10;1010" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="4" cy="14" cx="-10" fill="#f58025">
+    <animate attributeName="cx" values="-10;1010" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>
