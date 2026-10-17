@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="ARMS - Advanced Robotics and Manufacturing Systems at Arizona State University">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#f58025" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#f58025" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#f58025" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orangeText" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f58025"/>
+      <stop offset="100%" stop-color="#ffb35c"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" fill="#0a0e17"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+  <rect width="1200" height="300" fill="url(#glow)"/>
+
+  <ellipse cx="975" cy="150" rx="200" ry="140" fill="#f58025" opacity="0.10">
+    <animate attributeName="opacity" values="0.07;0.16;0.07" dur="4.5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <g transform="translate(965 150) scale(6.2) translate(-12 -12)" stroke="#f58025" fill="none" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <circle cx="12" cy="12" r="3"/>
+    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82.33l.06.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.23.6.83 1 1.51 1H21a2 2 0 1 1 0 4h-.09c-.68 0-1.28.4-1.51 1z"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="14s" repeatCount="indefinite" additive="sum"/>
+  </g>
+  <g transform="translate(1095 62) scale(3.1) translate(-12 -12)" stroke="#ffb35c" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+    <circle cx="12" cy="12" r="3"/>
+    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82.33l.06.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.23.6.83 1 1.51 1H21a2 2 0 1 1 0 4h-.09c-.68 0-1.28.4-1.51 1z"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="9s" repeatCount="indefinite" additive="sum"/>
+  </g>
+  <g transform="translate(1095 248) scale(2.2) translate(-12 -12)" stroke="#e56f14" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4">
+    <circle cx="12" cy="12" r="3"/>
+    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82.33l.06.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.23.6.83 1 1.51 1H21a2 2 0 1 1 0 4h-.09c-.68 0-1.28.4-1.51 1z"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="11s" repeatCount="indefinite" additive="sum"/>
+  </g>
+
+  <g>
+    <circle cx="723" cy="199" r="1.8" fill="#f58025" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0" dur="3.7s" begin="3.3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="199;127" dur="3.7s" begin="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="808" cy="254" r="1.3" fill="#f58025" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0" dur="5.3s" begin="0.1s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="254;139" dur="5.3s" begin="0.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="916" cy="188" r="1.5" fill="#f58025" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0" dur="5.4s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="188;113" dur="5.4s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="517" cy="260" r="2.1" fill="#f58025" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0" dur="6.8s" begin="2.3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="260;150" dur="6.8s" begin="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="161" cy="208" r="1.3" fill="#f58025" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0" dur="6.5s" begin="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="208;130" dur="6.5s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="301" cy="253" r="1.6" fill="#f58025" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0" dur="6.4s" begin="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="253;169" dur="6.4s" begin="0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="822" cy="192" r="2.0" fill="#f58025" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0" dur="3.7s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="192;106" dur="3.7s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1076" cy="267" r="1.9" fill="#f58025" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0" dur="6.2s" begin="1.9s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="267;149" dur="6.2s" begin="1.9s" repeatCount="indefinite"/>
+    </circle>
+    
+  </g>
+
+  <text x="82" y="150" font-family="Arial, Helvetica, sans-serif" font-size="104" font-weight="800" letter-spacing="2" fill="#f5f7fa">ARMS</text>
+  <text x="352" y="150" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="url(#orangeText)">@ ASU</text>
+
+  <path d="M86 178 H470" stroke="#f58025" stroke-width="4" stroke-linecap="round" stroke-dasharray="384" stroke-dashoffset="384">
+    <animate attributeName="stroke-dashoffset" from="384" to="0" dur="1.6s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+  </path>
+
+  <text x="84" y="222" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#98a2b6" letter-spacing="0.5">Advanced Robotics &amp; Manufacturing Systems</text>
+  <text x="84" y="262" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="600" fill="#f58025" letter-spacing="3">BUILD &#183; COMPETE &#183; TEACH</text>
+</svg>
